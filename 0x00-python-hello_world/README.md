@@ -1,3 +1,3 @@
 # Hello, World
 
-# A Hello world project in Python
+# Hello world project in Python
