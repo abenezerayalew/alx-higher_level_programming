@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def magic_string(str=[]):
     str += ["BestSchool"]
     return (", ".join(str))
