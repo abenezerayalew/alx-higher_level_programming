@@ -1,21 +1,15 @@
 #!/usr/bin/node
 
-const { parse } = require("path");
-const { argv } = require("process");
+const { argv } = require('process');
 
-//script that prints the addition of 2 integers
-let num1 = parseInt(argv[2]);
-let num2 = parseInt(argv[3]);
-
-function add(a,b)
-{
+// script that prints the addition of 2 integers
+const num1 = parseInt(argv[2]);
+const num2 = parseInt(argv[3]);
+if (isNaN(num1) || isNaN(num2)) {
+  console.log('NaN');
+}
+function add (a, b) {
   return a + b;
 }
-if (isNaN(num1))
-{
-    return console.log(NaN);
-}
-else
-{
-    return console.log(add(num1,num2));
-}
+
+console.log(add(num1, num2));
