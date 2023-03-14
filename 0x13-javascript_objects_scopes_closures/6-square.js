@@ -10,7 +10,7 @@ class Square extends SquareP {
 
   charPrint (c = 'X') {
     if (typeof c === 'undefined') {
-      return c === 'X';
+      c = 'X';
     }
     let i = 0;
     while (i < this.size) {
