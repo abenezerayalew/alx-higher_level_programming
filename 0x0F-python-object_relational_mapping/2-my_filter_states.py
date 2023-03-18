@@ -15,7 +15,7 @@ if __name__ == '__main__':
                 passwd=db_passwd,
                 db=db_name)
     cur = database.cursor()
-    cur.execute(("SELECT * FROM states WHERE name = \'{}\' \
+    cur.execute(("SELECT id, name FROM states WHERE states.name = \'{}\' \
                   ORDER BY states.id ASC ").format(stateName))
     for row in cur.fetchall():
         print(row)
