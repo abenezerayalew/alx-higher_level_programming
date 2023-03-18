@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# script that takes in an argument and displays all values
+""" Select states whhere names matching arguments """
 from sys import argv
 import MySQLdb
 
