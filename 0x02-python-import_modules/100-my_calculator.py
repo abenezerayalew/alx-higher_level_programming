@@ -2,7 +2,7 @@
 from sys import argv
 from calculator_1 import add, mul, sub, div
 length = len(argv)
-if length != 3:
+if length <= 3:
     print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     exit(1)
 else:
