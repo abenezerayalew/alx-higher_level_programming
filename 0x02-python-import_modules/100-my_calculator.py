@@ -9,18 +9,16 @@ else:
     operator = argv[2]
     match(operator):
         case '+':
-            result = add(int(argv[1]),int(argv[3]))
-            print("{} + {} = {}".format(argv[1],argv[3],result))
+            result = add(int(argv[1]), int(argv[3]))
+            print("{} + {} = {}".format(argv[1], argv[3], result))
         case '-':
-            result = sub(int(argv[1]),int(argv[3]))
-            print("{} - {} = {}".format(argv[1],argv[3],result))
+            result = sub(int(argv[1]), int(argv[3]))
+            print("{} - {} = {}".format(argv[1], argv[3], result))
         case '/':
-            result = div(int(argv[1]),int(argv[3]))
-            print("{} / {} = {}".format(argv[1],argv[3],result))
+            result = div(int(argv[1]), int(argv[3]))
+            print("{} / {} = {}".format(argv[1], argv[3], result))
         case '*':
-            result = mul(int(argv[1]),int(argv[3]))
-            print("{} * {} = {}".format(argv[1],argv[3],result))
+            result = mul(int(argv[1]), int(argv[3]))
+            print("{} * {} = {}".format(argv[1], argv[3], result))
         case other:
             print("Unknown operator. Available operators: +, -, * and /")
-
-
