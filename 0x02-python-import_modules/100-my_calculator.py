@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 from sys import argv
 from calculator_1 import add, mul, sub, div
+a = int(argv[1])
+b = int(argv[3])
 length = len(argv)
 if length <= 3:
     print("Usage: ./100-my_calculator.py <a> <operator> <b>")
@@ -9,17 +11,14 @@ else:
     operator = argv[2]
     match(operator):
         case '+':
-            result = add(int(argv[1]), int(argv[3]))
-            print("{} + {} = {}".format(argv[1], argv[3], result))
+            print("{} + {} = {}".format(a, b, add(a, b)))
         case '-':
-            result = sub(int(argv[1]), int(argv[3]))
-            print("{} - {} = {}".format(argv[1], argv[3], result))
+            print("{} - {} = {}".format(a, b, sub(a, b)))
         case '/':
             result = div(int(argv[1]), int(argv[3]))
-            print("{} / {} = {}".format(argv[1], argv[3], result))
+            print("{} / {} = {}".format(a, b, div(a, b)))
         case '*':
-            result = mul(int(argv[1]), int(argv[3]))
-            print("{} * {} = {}".format(argv[1], argv[3], result))
+            print("{} * {} = {}".format(a, b, mul(a, b)))
         case other:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
