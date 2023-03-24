@@ -22,3 +22,4 @@ else:
             print("{} * {} = {}".format(argv[1], argv[3], result))
         case other:
             print("Unknown operator. Available operators: +, -, * and /")
+            exit(1)
