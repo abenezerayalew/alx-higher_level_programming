@@ -16,12 +16,12 @@ if __name__ == '__main__':
         from calculator_1 import add, mul, sub, div
         a = int(argv[1])
         b = int(argv[3])
-    match(operator):
-        case '+':
-            print("{} + {} = {}".format(a, b, add(a, b)))
-        case '-':
-            print("{} - {} = {}".format(a, b, sub(a, b)))
-        case '/':
-            print("{} / {} = {}".format(a, b, div(a, b)))
-        case '*':
-            print("{} * {} = {}".format(a, b, mul(a, b)))
+        match(operator):
+            case '+':
+                print("{} + {} = {}".format(a, b, add(a, b)))
+            case '-':
+                print("{} - {} = {}".format(a, b, sub(a, b)))
+            case '/':
+                print("{} / {} = {}".format(a, b, div(a, b)))
+            case '*':
+                print("{} * {} = {}".format(a, b, mul(a, b)))
