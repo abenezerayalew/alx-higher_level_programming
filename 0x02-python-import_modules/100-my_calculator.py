@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
         operator = argv[2]
         if operator != '+' and operator != '-' and \
-                            operator != '*' and operator != '/':
+                operator != '*' and operator != '/':
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
         from calculator_1 import add, mul, sub, div
