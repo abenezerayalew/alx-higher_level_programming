@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+echo "Enter file name"
+# read file semistandard
+# git add $file
+git add .
+echo "Enter commit"
+#read message
+#git commit -m "$message"
+git commit -m "all"
+git push
